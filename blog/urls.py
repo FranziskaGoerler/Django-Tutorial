@@ -4,4 +4,10 @@ from . import views
 urlpatterns = [
     # ex: /blog/
     path('', views.post_list, name='post_list'),
+    # ex: /blog/post/1/
+    path('post/<int:pk>', views.post_detail, name='post_detail'),
+    # ex: /blog/post/new/
+    path('post/new/', views.post_new, name='post_new'),
+    # ex: /blog/post/1/edit/
+    path('post/<int:pk>/edit/', views.post_edit, name='post_edit'),
 ]
