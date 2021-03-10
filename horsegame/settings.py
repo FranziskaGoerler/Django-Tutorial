@@ -33,6 +33,7 @@ ALLOWED_HOSTS = ['localhost','127.0.0.1', '.pythonanywhere.com']
 INSTALLED_APPS = [
     'blog.apps.BlogConfig',
     'polls.apps.PollsConfig',
+    'game.apps.GameConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -106,6 +107,7 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+LOGIN_REDIRECT_URL = '/'
 
 # Internationalization
 # https://docs.djangoproject.com/en/3.1/topics/i18n/
